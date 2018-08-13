@@ -25,13 +25,13 @@ public class SpringBootMybatisCache2RedisApplicationTests {
 
 	@Test
 	public void testInsert(){
-		User user = new User(null, "song", 1);
+		User user = new User(null, "test", 1);
 		userMapper.insertOne(user);
 	}
 
 	@Test
 	public void testMapper(){
-		System.out.println(userMapper.selectOne(10));
+		System.out.println(userMapper.selectOne(1));
 	}
 
 	@Test
